@@ -5,8 +5,8 @@ cd app
 mvn clean package
 
 ## Build Docker Image
-docker build -t <your-dockerhub-username>/spring-k8s-demo:v1 .
-docker push <your-dockerhub-username>/spring-k8s-demo:v1
+docker build -t shefeeqpm/spring-k8s-demo:v1 .
+docker push shefeeqpm/spring-k8s-demo:v1
 
 ## Deploy Dev
 kubectl apply -f k8s/dev/
