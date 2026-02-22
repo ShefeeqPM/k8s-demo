@@ -6,6 +6,7 @@ mvn clean package
 
 ## Build Docker Image
 docker build -t shefeeqpm/spring-k8s-demo:v1 .
+
 docker push shefeeqpm/spring-k8s-demo:v1
 
 ## Deploy Dev
