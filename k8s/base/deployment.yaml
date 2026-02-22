@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: spring-app
-        image: <dockerhub-username>/spring-k8s-demo:v1
+        image: shefeeqpm/spring-k8s-demo:v1
         ports:
         - containerPort: 8080
         envFrom:
