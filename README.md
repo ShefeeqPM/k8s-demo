@@ -35,7 +35,7 @@ sudo apt update
 
 sudo apt install apache2-utils -y
 
-ab -n 300000 -c 300 -H "Host: hostname" http://<external-ip>/
+ab -n 300000 -c 300 -H "Host: hostname" http://[external-ip]/
 
 eg: ab -n 300000 -c 300 -H "Host: qa.demo.com" http://136.110.225.71/
 
