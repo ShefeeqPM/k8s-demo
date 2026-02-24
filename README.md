@@ -26,3 +26,15 @@ kubectl apply -f k8s/base/ -n prod
 
 ## Get Ingress IP
 kubectl get ingress -A
+
+## create HPA
+kubectl apply -f hpa.yml
+
+## To generate load on a deployment and see HPA working.
+sudo apt update
+
+sudo apt install apache2-utils -y
+
+ab -n 300000 -c 300 -H "Host: hostname" http://<external-ip>/
+
+eg: ab -n 300000 -c 300 -H "Host: qa.demo.com" http://136.110.225.71/
