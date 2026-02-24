@@ -17,9 +17,7 @@ public class EnvController {
     private String dbPassword;
 
     @GetMapping("/")
-    public String showConfig() {
-        return "Environment: " + env +
-                "\nLog Level: " + logLevel +
-                "\nDB Password: " + dbPassword;
+    public EnvResponseDto showConfig() {
+        return new EnvResponseDto(env, logLevel, dbPassword);
     }
 }
