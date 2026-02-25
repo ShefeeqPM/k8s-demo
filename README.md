@@ -43,3 +43,6 @@ eg: ab -n 300000 -c 300 -H "Host: qa.demo.com" http://136.110.225.71/
 kubectl get  hpa [hpa-name] -w -n [namespace]
 
 eg: kubectl get  hpa spring-app-hpa -w -n qa
+
+## To exec into pod
+kubectl exec -it spring-app-75598c87d8-9h5rt -n dev -- sh
