@@ -3,7 +3,10 @@ kind: Ingress
 metadata:
   name: spring-ingress
   namespace: dev
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
+  ingressClassName: nginx
   rules:
     - host: dev.demo.com
       http:
