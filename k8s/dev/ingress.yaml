@@ -8,7 +8,7 @@ spec:
     - host: dev.demo.com
       http:
         paths:
-          - path: /
+          - path: /app1
             pathType: Prefix
             backend:
               service:
