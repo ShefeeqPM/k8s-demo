@@ -27,6 +27,10 @@ kubectl apply -f k8s/base/ -n prod
 ## Get Ingress IP
 kubectl get ingress -A
 
+## Windows host file to add Ingress Loadbalancer IP.
+
+C:\Windows\System32\drivers\etc\hosts
+
 ## create HPA
 kubectl apply -f hpa.yml
 
